@@ -104,13 +104,153 @@ void listas_exemplos() {
   print("map 2 => $map_1");
 }
 
-void If_Else_exemplo() {}
+void If_Else_exemplo(int idade) {
+  if (idade >= 18) {
+    print("Maior de idade");
+  } else {
+    print("Menor de idade");
+  }
+}
+
+void for_exemplo_1(List<int> lista_numeros) {
+  for (var i = 0; i < lista_numeros.length - 1; i++) {
+    print("[$i] => ${lista_numeros[i]}");
+  }
+}
+
+void for_exemplo_2() {
+  for (var i = 1; i <= 10; i++) {
+    if (i == 2) {
+      print("Dentro do loop for $i");
+      continue;
+    }
+  }
+  print("Fora do loop for");
+}
+
+void forEach_exemplo_1(Map<String, int> lista_numeros) {
+  lista_numeros.forEach((key, value) {
+    print("[$key] => $value");
+  });
+}
+
+void while_exemplo_1() {
+  int energia = 100;
+  while (energia > 0) {
+    print("Mais uma Repetição");
+    energia -= 10;
+  }
+}
+
+void while_exemplo_2() {
+  int count = 1;
+  while (count <= 10) {
+    print("Dentro do loop while");
+    count++;
+    if (count == 4) {
+      break;
+    }
+  }
+  print("Fora do loop while");
+}
+
+void while_exemplo_3() {
+  int count = 1;
+  while (count <= 10) {
+    count++;
+    if (count == 4) {
+      print("Pula o numero 4");
+      continue;
+    }
+    print("Dentro do loop while, $count");
+  }
+  print("Fora do loop while");
+}
+
+void do_while_exemplo_1() {
+  int energia = 100;
+  do {
+    print("Mais uma Repetição");
+    energia -= 10;
+  } while (energia > 0);
+}
+
+void do_while_exemplo_2() {
+  int count = 1;
+  do {
+    print("Dentro do loop while");
+    count++;
+    if (count == 4) {
+      break;
+    }
+  } while (count <= 10);
+  print("Fora do loop while");
+}
+
+void do_while_exemplo_3() {
+  int count = 1;
+  do {
+    count++;
+    if (count == 4) {
+      print("Pula o numero 4");
+      continue;
+    }
+    print("Dentro do loop while, $count");
+  } while (count <= 10);
+  print("Fora do loop while");
+}
+
+void switch_case_exemplo() {
+  String nota = "A";
+  switch (nota) {
+    case "A":
+      print("Muito bom");
+      break;
+    case "B":
+      print("Bom");
+      break;
+    case "C":
+      print("Mediano");
+      break;
+    case "D":
+      print("Ruim");
+      break;
+    case "E":
+      print("Muito ruim");
+      break;
+    default:
+      print("Escolha inválida");
+      break;
+  }
+}
 
 void main(List<String> args) {
   // ola_mundo();
   // variaveis_tipos();
   // variaveis_tipos();
-  listas_exemplos();
+  // listas_exemplos();
+  // If_Else_exemplo(18);
+  // for_exemplo_1([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
+  for_exemplo_2();
+  // forEach_exemplo_1({
+  //   "A": 0,
+  //   "B": 1,
+  //   "C": 2,
+  //   "D": 3,
+  //   "E": 4,
+  //   "F": 5,
+  //   "G": 6,
+  //   "H": 7,
+  //   "I": 8,
+  //   "J": 9
+  // });
+  // while_exemplo_1();
+  // while_exemplo_2();
+  // while_exemplo_3();
+  // do_while_exemplo_1();
+  // do_while_exemplo_2();
+  // do_while_exemplo_3();
+  // switch_case_exemplo();
 }
 
 /*
