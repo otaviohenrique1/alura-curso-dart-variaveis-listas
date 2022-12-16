@@ -258,3 +258,21 @@ void main(List<String> args) {
   Const => nao muda o valor
   Final => pode comecar vazio, nao muda o valor depois que um valor for atribuido
 */
+
+// Comentario de uma linha
+/*
+  Comentario
+  com
+  muitas
+  linhas
+*/
+// TODO: Comentario TODO
+/// Comentario de documentação de uma linha
+/**
+ * Comentario
+ * de
+ * documentação
+ * com
+ * muitas
+ * linhas
+**/
